@@ -1,0 +1,48 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Отображение тегов HTML5 как блочных для старых браузеров*/
+article, aside, figure, figcaption, footer,
+header, hgroup, nav, section, summary {
+  display: block;
+}
+
+.lato-black {
+  font-family: "lato-Black", serif;
+}
+
+.lato-light {
+  font-family: "Lato-Light", serif;
+}
+
+a {
+  text-decoration: none;
+  color: #222222;
+}
+
+li {
+  list-style: none;
+}
+
+summary:-webkit-details-marker {
+  display: none;
+}
+
+input, button, details, summary {
+  outline: none;
+}
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+/*---------------------*/
+/*HEADER*/
+/*---------------------*/
+
+/*# sourceMappingURL=style.css.map */
