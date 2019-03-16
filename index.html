@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" http-equiv="X-UA-Compatible" content="IE=Edge"> <!--Поддержка EDGE-mode  в IE-->
-    <meta name="viewport" content="width=device-width, initial-scale=1"> <!--Мета тэг управления разметкой на мобильных браузерах-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Мета тэг управления разметкой на мобильных браузерах-->
     <title>Home</title>
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/normolize.css">
@@ -11,12 +12,118 @@
           integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
 <body>
-    <header>
-        <div class="container">
+<header class="header">
+    <div class="container">
+        <div class="flex-container">
+            <div class="left-block">
+                <div class="logo">
+                    <a href="index.html" class="logo__link"><img src="img/logo.png" alt="Logo" class="logo__img"></a>
+                    <h2 class="logo__text logo__text_visual">bran<span class="logo__span logo__span_visual">d</span>
+                    </h2>
+                </div>
+                <div class="search">
+                    <a href="#" class="search__category">Browse</a>
+                    <div class="search__block search__block_hidden search__block_parameters">
+                        <div class="search-square search-square_parameters"></div>
+                        <p class="search-women">WOMEN</p>
+                        <ul>
+                            <li><a href="#" class="search-link">Dresses</a></li>
+                            <li><a href="#" class="search-link">Tops</a></li>
+                            <li><a href="#" class="search-link">Sweaters/Knits</a></li>
+                            <li><a href="#" class="search-link">Jackets/Coats</a></li>
+                            <li><a href="#" class="search-link">Blazers</a></li>
+                            <li><a href="#" class="search-link">Denim</a></li>
+                            <li><a href="#" class="search-link">Leggings/Pants</a></li>
+                            <li><a href="#" class="search-link">Skirts/Shorts</a></li>
+                            <li><a href="#" class="search-link">Accessories</a></li>
+                            <li><a href="#" class="search-link">Bags/Purses</a></li>
+                            <li><a href="#" class="search-link">Swimwear/Underwear</a></li>
+                            <li><a href="#" class="search-link">Nightwear</a></li>
+                            <li><a href="#" class="search-link">Shoes</a></li>
+                            <li><a href="#" class="search-link">Beauty</a></li>
+                        </ul>
+                        <p class="search-men">MEN</p>
+                        <ul>
+                            <li><a href="#" class="search-link">Tees/Tank tops</a></li>
+                            <li><a href="#" class="search-link">Shirts/Polos</a></li>
+                            <li><a href="#" class="search-link">Sweaters</a></li>
+                            <li><a href="#" class="search-link">Sweatshirts/Hoodies</a></li>
+                            <li><a href="#" class="search-link">Blazers</a></li>
+                            <li><a href="#" class="search-link">Jackets/vests</a></li>
+                        </ul>
+                    </div>
 
+                    <form action="#" class="search__form">
+                        <label>
+                            <input class="search__form_text" type="text" placeholder="Search for Item...">
+                        </label>
+                    </form>
+                    <a href="#" class="search__form_button"></a>
+                </div>
+            </div>
+            <div class="right-block">
+                <div class="cart">
+                    <a href="#" class="cart__link cart__link_position"></a>
+                    <div class="cart__block cart__block_hidden cart__block_parameters">
+                        <div class="cart-square cart-square_parameters"></div>
+                        <div class="cart-items">
+                            <div class="cart-item cart-item1">
+                                <a href="#" class="item-link"><img src="img/cart-item1.png" alt="item-1"></a>
+                                <div class="item-desc">
+                                    <p class="item-desc_p">Rebox Zane</p>
+                                    <div class="items-star"><img src="img/stars.png" alt="stars"></div>
+                                    <span class="item-desc_span">1 x $250</span>
+                                </div>
+                                <a href="#" class="cart-item-del"></a>
+                            </div>
+                            <div class="item-line"></div>
+                            <div class="cart-item cart-item2">
+                                <a href="#"><img src="img/cart-item2.png" alt="item-2"></a>
+                                <div class="item-desc">
+                                    <p class="item-desc_p">Rebox Zane</p>
+                                    <div class="items-star"><img src="img/stars.png" alt="stars"></div>
+                                    <span class="item-desc_span">1 x $250</span>
+                                </div>
+                                <a href="#" class="cart-item-del"></a>
+                            </div>
+                            <div class="item-line"></div>
+                        </div>
+                        <div class="cart-total">
+                            <div class="total-price">
+                                <p class="total-price-text">TOTAL</p>
+                                <span class="total-summ">$500.00</span>
+                            </div>
+                            <div class="cart-buttons">
+                                <a href="#" class="price__button price__button_checkout"><span class="checkout-text">checkout</span></a>
+                                <a href="#" class="price__button price__button_goCart"><span class="goCart-text">go to cart</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="account-menu">
+                    <a href="#" class="account-menu__link">My account</a>
+                </div>
+            </div>
         </div>
-    </header>
-    <main></main>
-    <footer></footer>
+    </div>
+    <div class="line"></div>
+    <div class="container">
+        <nav class="menu menu-top">
+            <ul class="menu-top__ul">
+                <li class="menu-top__ul_li"><a href="#" class="item-menu menu-top__ul_a">Home</a></li>
+                <li class="menu-top__ul_li"><a href="#" class="item-menu menu-top__ul_a">Man</a></li>
+                <li class="menu-top__ul_li"><a href="#" class="item-menu menu-top__ul_a">Women</a></li>
+                <li class="menu-top__ul_li"><a href="#" class="item-menu menu-top__ul_a">Kids</a></li>
+                <li class="menu-top__ul_li"><a href="#" class="item-menu menu-top__ul_a">Accoseriese</a></li>
+                <li class="menu-top__ul_li"><a href="#" class="item-menu menu-top__ul_a">Featured</a></li>
+                <li class="menu-top__ul_li"><a href="#" class="item-menu menu-top__ul_a">Hot Deals</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<main>
+
+</main>
+<footer></footer>
 </body>
 </html>
