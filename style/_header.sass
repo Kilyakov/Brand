@@ -1,0 +1,265 @@
+/*---------------------*/
+/*HEADER*/
+/*---------------------*/
+
+.flex-container
+  display: flex
+  justify-content: space-between
+  margin-top: 25px
+  flex-wrap: wrap
+
+.left-block, .right-block
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-wrap: wrap
+
+.logo
+  display: flex
+  justify-content: center
+  flex-wrap: wrap
+  align-items: center
+  margin-right: 37px
+  &__text
+    margin-left: 13px
+    &_visual
+      text-transform: uppercase
+      color: $gray
+      font-family: $lato
+      font-size: 27px
+      font-weight: 300
+  &__span
+    &_visual
+      color: $pink
+      font-family: $lato-black
+
+.search
+  display: flex
+  align-items: center
+  position: relative
+  font-size: 14px
+  &__block
+    display: block
+    position: absolute
+    background-color: #fff
+    border-radius: 5px
+    -webkit-box-shadow: 0 0 1px 1px #CCCCCC
+    box-shadow: 0 0 1px 1px #CCCCCC
+    z-index: 999
+    &_parameters
+      top: 35px
+      min-width: 262px
+      padding: 0 20px 15px
+      font-size: 14px
+    &_hidden
+      display: none
+    &:hover
+      display: block
+    .search-women, .search-men
+      padding-top: 20px
+      padding-bottom: 10px
+      border-bottom: 1px solid #e8e8e8
+      font-weight: bold
+      color: #232323
+    .search-link
+      display: block
+      padding: 3px 15px
+      color: #4f4f4f
+      &:hover
+        color: $pink
+        font-weight: bold
+    .search-square
+      width: 10px
+      height: 10px
+      background-color: #fff
+      transform: rotate(45deg)
+      position: relative
+      -webkit-box-shadow: -1px -1px 0 0 #CCCCCC
+      box-shadow: -1px -1px 0 0 #CCCCCC
+      &_parameters
+        top: -5px
+        left: 47px
+  &__category
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 87px
+    height: 38px
+    border-radius: 3px 0 0 3px
+    border: 1px solid #e6e6e6
+    background-color: #cdcdcc
+    background-image: linear-gradient(to bottom, #f9f9f9 0%, #f5f5f5 100%)
+    &:hover +.search__block_hidden
+      display: block
+    &::after
+      content: ""
+      border: 5px solid transparent
+      border-top: 5px solid #838383
+      position: relative
+      top: 3px
+      left: 5px
+  &__form_text
+    width: 317px
+    height: 38px
+    position: relative
+    left: -2px
+    padding-left: 15px
+    padding-right: 50px
+    color: #a4a4a4
+    font-weight: 300
+    border-radius: 0 3px 3px 0
+    border: 1px solid #e6e6e6
+  &__form_button
+    width: 36px
+    height: 36px
+    background: url("../img/search.png") center center no-repeat
+    border-left: 1px solid #e8e8e8
+    position: relative
+    left: -40px
+    &:hover
+      background-size: 18px
+
+.cart
+  position: relative
+  &:hover .cart__block_hidden
+    display: block
+  &__link
+    display: block
+    width: 38px
+    height: 38px
+    background: url("../img/cart.svg") center center no-repeat
+    &_position
+      margin-right: 25px
+  &__block
+    @extend .search__block
+    &_parameters
+      top: 40px
+      left: -70px
+      width: 260px
+      &:hover
+        display: block
+    &_hidden
+      display: none
+    .cart-square
+      @extend .search-square
+      &_parameters
+        top: -5px
+        left: 85px
+    .cart-items
+      display: flex
+      flex-direction: column
+      .cart-item
+        display: flex
+        justify-content: space-around
+        padding: 15px 5px
+        .item-link
+          width: 72px
+          height: 85px
+        .item-desc
+          width: 125px
+          display: flex
+          flex-direction: column
+          justify-content: space-around
+          padding: 10px 0
+          .item-desc_p
+            color: $gray
+            font-size: 12px
+            font-weight: 700
+            text-transform: uppercase
+          .item-desc_span
+            color: $pink
+        .cart-item-del
+          width: 15px
+          background: url("../img/del-cart.png") center center no-repeat
+      .item-line
+        background-color: #ededed
+        height: 1px
+        margin: 0 10px
+.cart-total
+  .total-price
+    display: flex
+    justify-content: space-between
+    padding: 20px 10px
+    .total-price-text, .total-summ
+      font-size: 16px
+      font-weight: 700
+      text-transform: uppercase
+  .price__button
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 225px
+    height: 50px
+    padding: 10px 0
+    margin-bottom: 10px
+    transition: all 300ms ease
+    box-shadow: 0 4px 10px 2px rgba(black, 0.2)
+  .price__button_checkout
+    border: 1px solid $pink
+    &:hover
+      background-color: $pink
+    &:hover >span
+      color: #ffffff
+.checkout-text
+  color: $pink
+  font-size: 14px
+  font-weight: 700
+  text-transform: uppercase
+.price__button_goCart
+  border: 1px solid $gray
+  &:hover
+    background-color: $gray
+    &:hover >span
+      color: #ffffff
+  .goCart-text
+    color: $gray
+    font-size: 14px
+    font-weight: 700
+    text-transform: uppercase
+.cart-buttons
+  display: flex
+  flex-direction: column
+  align-items: center
+.account-menu
+  &__link
+    display: block
+    width: 130px
+    height: 38px
+    text-align: center
+    font-size: 15px
+    line-height: 32px
+    background-color: $pink
+    color: #fff
+    &::after
+      content: ""
+      border: 5px solid transparent
+      border-top: 5px solid #fff
+      position: relative
+      top: 13px
+      left: 8px
+
+.line
+  border-radius: 0 3px 3px 0
+  border: 1px solid #e6e6e6
+  margin-top: 20px
+  margin-bottom: 10px
+
+.menu-top
+  display: flex
+  justify-content: center
+  &__ul
+    display: flex
+    flex-wrap: wrap
+    &_a
+      display: block
+      padding: 10px
+      color: #222222
+      font-size: 14px
+      font-weight: 700
+      text-transform: uppercase
+      &:hover
+        border-bottom: 3px solid $pink
+    &_li
+      margin-right: 35px
+      &:last-child
+        margin-right: 0
